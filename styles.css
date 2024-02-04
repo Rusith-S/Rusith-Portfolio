@@ -16,9 +16,9 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(images/background.jpeg);  
+    background-size:cover;;
+    background-position: right;
 }
 
 .container{
@@ -68,15 +68,54 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    
 }
 
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    
 }
 
 .header-text h1 span{
     color: purple;
+    
+}
+.typing-animation {
+    display: inline-block;
+    opacity: 0;
+    animation: typing 0.9s steps(10, end) forwards; 
+    letter-spacing: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        opacity: 1;
+        letter-spacing: 0;
+    }
+    to {
+        letter-spacing: 0;
+    }
+}
+
+.typing-animation-reverse {
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
+    animation: backspacing 0.9s steps(10, start) forwards; 
+}
+
+@keyframes backspacing {
+    from {
+        width: 1em;
+        opacity: 1;
+        letter-spacing: 0;
+    }
+    to {
+        width: 0;
+        letter-spacing: 0;
+    }
 }
 
 /* --About-- */
@@ -98,11 +137,18 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
+
 }
 
 .about-col-2{
     flex-basis: 60%;
+}
+
+.about-col-2 p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align:justify;
 }
 
 .sub-title{
@@ -143,9 +189,14 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 
+.tab-contents ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
 .tab-contents ul li span{
-    color: purple;
-    font: size 14px;
+    color: #A159F0;
+    font-size:  18px;
 }
 
 .tab-contents{
@@ -189,6 +240,9 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 
+.services-list div p{
+    text-align: center; 
+}
 .services-list div a{
     text-decoration: none;
     color: #fff;
@@ -201,7 +255,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/* ---------Portfolio------------- */
+/* ---------Projects------------- */
 #portfolio{
     padding: 50px 0;
 }
@@ -369,7 +423,8 @@ nav .fa-solid{
 /* -------CSS for small screens-------------------------------- */
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url(images/download\ mobile.jpeg);
+        padding-top: 20px;
     }
 
     .header-text{
