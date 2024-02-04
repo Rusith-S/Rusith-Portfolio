@@ -424,8 +424,10 @@ nav .fa-solid{
 /* -------CSS for small screens-------------------------------- */
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/mobile.jpeg);
+        
         padding-top: 20px;
+        background: #080808;
+        background-image: url(images/mobile.jpeg);
     }
 
     .header-text{
