@@ -16,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpeg);  
+    background-image: url(images/background1.jpeg);  
     background-size:cover;;
     background-position: right;
 }
@@ -423,7 +423,7 @@ nav .fa-solid{
 /* -------CSS for small screens-------------------------------- */
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/download\ mobile.jpeg);
+        background-image: url(images/download\ mobile1.jpeg);
         padding-top: 20px;
     }
 
@@ -439,7 +439,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: purple;
+        background: linear-gradient(rgba(20, 19, 19, 0.6),rgb(29, 0, 29));
         position:fixed;
         top: 0;
         right: -200px;
