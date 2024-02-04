@@ -1,225 +1,365 @@
 <!DOCTYPE html>
 <html lang="en" lang="en">
-<head>
-    <meta charset=utf-8>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width", intial-scale="1.0">
-    <title>Rusith Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/48c23fc601.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href="#header"><img src="images/logo.png" class="logo"></a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I'm <span>Rusith</span><br> From Malabe SriLanka</h1>
-            </div>
-        </div>
-    </div>
-
-<!-------about------>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus ratione earum corporis laborum, 
-                    odit aliquid esse, in dolorem nam deleniti quae. Fuga eius adipisci totam maxime qui quas autem.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Desining web/APP interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>UI/UX</span><br>Desining web/APP interfaces</li>
-                            <li><span>Web </span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>UI/UX</span><br>Desining web/APP interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", intial-scale="1.0">
+        <title>Rusith Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/48c23fc601.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#header"><img src="images/logo.png" class="logo"></a>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm <span class="typing-animation">R </span><span class="typing-animation">u</span><span class="typing-animation">s</span><span class="typing-animation">i</span><span class="typing-animation">t</span><span class="typing-animation">h&nbsp;</span><span class="typing-animation">S</span><span class="typing-animation">a</span><span class="typing-animation">s</span><span class="typing-animation">h</span><span class="typing-animation">i</span><span class="typing-animation">k</span><span class="typing-animation">a</span><br> From Malabe 
+                        <!-- <br>Sri Lanka--></h1> 
                 </div>
             </div>
         </div>
 
-    </div>
+    <!-------about------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm an extremely motivated individual who plans to pursue a
+                            career in information technology and am a self-learner with a
+                            passion for acquiring new skills. Further, I am Strong in self-learning and teamwork and adept at working collaboratively in
+                            teams. Seeking to apply these skills to contribute efficiently,
+                            effectively, and thrive in a dynamic and innovative work
+                            environment.</p>
 
-    <!-------Services------>
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas numquam molestias velit saepe in praesentium nihil 
-                        eaque possimus maxime nostrum, facere nobis vel id officia ea! Voluptatum aut dolore ab?</p>
-                    <a href="#">Learn more</a>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Proffesional Certifications</p>
+                            <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desining web/APP interfaces</li>
+                                <li><span>Full stack Web Application Development</span><br>Web app Development</li>
+                                <li><span>Full stack Mobile App Development</span><br>Building Android/ios apps</li>
+                                <li><span>Communication</span><br>Fluent in English and Sinhala languages</li>
+                                <li><span>Self-learning</span><br>Strong Self Learner</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BSc (Hons) in Information Technology Specializing in Information
+                                    Technology(SLIIT)
+                                    </span><br>2021 - Present</li>
+                                <li><span>GCE Advanced Level</span><br>2020</li>
+                                <li><span>GCE Ordinary Level</span><br>2017</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li>
+                                    <span>Full Stack Developer Programme - [Pending]</span><br>
+                                    Open Learning Platform University of Moratuwa <br><br>
+                                    <a href="https://bit.ly/49fGiId" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br>
+                                </li>
+                                <li>
+                                    <span>AI / ML Engineer (Stage 01) - [Pending]</span><br>
+                                    Industry Engagement Unit - SLIIT <br><br>
+                                    <!-- <a href="https://bit.ly/49fGiId" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br> -->
+                                </li>
+                                <li>
+                                    <span> Front-End Developer Professional Certificate - [Pending]</span><br>
+                                    IBM  <br><br>
+                                    <!-- <a href="https://bit.ly/49fGiId" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br> -->
+                                </li>
+                                <li>
+                                    <span>Fundementals of Digital Marketing </span><br>
+                                    Google Digital Garage  <br><br>
+                                    <!-- <a href="https://bit.ly/49fGiId" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br> -->
+                                </li>
+                                <li>
+                                    <span>Web Development </span><br>
+                                    Sololearn  <br><br>
+                                    <a href="https://shorturl.at/nxJX2" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br>
+                                </li>
+                                <li>
+                                    <span>Skill Tests (SQL, JavaScript, CSS) </span><br>
+                                    HackerRank  <br><br>
+                                    <a href="https://bit.ly/49fGiId" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br>
+                                </li>
+                                <li>
+                                    <span>Angular, Java, JavaScript, Python, SQL</span>
+                                    <br>Sololearn  <br><br>
+                                    <a href="https://bit.ly/49fGiId" target="_blank"><i class="fa-solid fa-certificate"></i> View Certificates</a><br><br>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desining web/APP interfaces</li>
+                                <li><span>Web </span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/ios apps</li> 
+                            </ul>
+                        </div>  -->
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas numquam molestias velit saepe in praesentium nihil 
-                        eaque possimus maxime nostrum, facere nobis vel id officia ea! Voluptatum aut dolore ab?</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas numquam molestias velit saepe in praesentium nihil 
-                        eaque possimus maxime nostrum, facere nobis vel id officia ea! Voluptatum aut dolore ab?</p>
-                    <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+        <!-------Services------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>
+                            In UI/UX Design, I strive to create captivating digital experiences that seamlessly merge aesthetic appeal with user functionality. 
+                            Through meticulous attention to user interface details, I craft visually engaging designs that prioritize both form and function. 
+                            By combining user research, wireframing, and prototyping, 
+                            I ensure a user-centric approach that results in intuitive and delightful interactions, making my portfolio a testament to my commitment to elevating digital design experiences.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front-end Web Development</h2>
+                        <p>I specialize in Front-end Web Development, bringing creativity and functionality to the digital realm. 
+                            Through my expertise in HTML, CSS, and JavaScript, I craft visually appealing and user-friendly websites that seamlessly integrate design and interactivity. 
+                            With a keen eye for detail and a commitment to responsive design, I ensure an optimal user experience across various devices, showcasing my dedication to delivering high-quality, engaging web solutions.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Back-end Web Development</h2>
+                        <p>  
+                            In Back-end Web Development, I excel at building robust and efficient server-side solutions that power the seamless functioning of websites and applications. 
+                            Through proficiency in languages like Python, Node.js, and database management systems, I architect scalable and secure back-end systems. 
+                            My portfolio showcases a diverse range of projects, highlighting my ability to tackle complex challenges and deliver reliable server-side solutions that contribute to the overall performance and success of web applications.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- ---------Portfolio---------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-             <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repudiandae blanditiis quos, nostrum iure dolorum sapiente beatae dicta possimus,
-                             voluptatum aspernatur saepe autem labore quis mollitia earum numquam natus.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        <!-- ---------Projects---------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work" id="Food Price Tracker Mobile App">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Food Price Tracker Mobile App</h3>
+                            <p>A group project with four contributors developed a
+                                mobile application called Food Price Tracker in the 2nd year of the 2nd
+                                semester of the Mobile Application Development module. The application
+                                provides real-time price information for items and store changes. It includes
+                                login and registration processes for store owners and customers, basic CRUD
+                                operations, and calculation</p>
+                            <a href="https://bit.ly/3Un3VtC" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/web 1.jpg">
+                        <div class="layer">
+                            <h3>Inventory Management System for Colombo District Scout Association</h3>
+                            <p>The group project, developed in the 2nd year of the 2nd
+                                semester for the information technology project module, includes an
+                                inventory management system with separate login and registration for
+                                administration and scout users. The system includes basic CRUD operations,
+                                calculations, and special functions like report generation.
+                                </p>
+                            <a href="https://bit.ly/48RtZBv" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/UI UX Design.jpg">
+                        <div class="layer">
+                            <h3>Redesign UI/UX Blinkee.com</h3>
+                            <p>In the 3rd year of the Human Computer Interaction module project, we
+                                found UI/UX issues in the Blinkee.com web site and redesign the
+                                Blinkee.com website by using Figma. We use Mockflow to design
+                                prototypes of the pages on blinkee.com.</p>
+                            <a href="https://bit.ly/48XkFvS" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" id="work3" style="display: none;">
+                        <img src="images/Web 3.jpg">
+                        <div class="layer">
+                            <h3>Event Management System</h3>
+                            <p>This is a group project with four contributors. We
+                                developed an Event Management System in the 2nd year of the 1st
+                                semester of the Object Oriented Programming module. In this application,
+                                we developed Login and Register, basic CRUD operations, and
+                                calculations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work" id="work4" style="display: none;">
+                        <img src="images/Web 2.jpg">
+                        <div class="layer">
+                            <h3>RR Parking Automated Car Parking System</h3>
+                            <p>This is a group project with five contributors. We
+                                developed an RR parking web application in the 1st year of the 2nd semester
+                                of the Internet and Web Technologies module. In this application, we
+                                developed Login and Register, basic CRUD operations, and calculations.                            
+                            </p>
+                            <a href="https://bit.ly/42pyW1Y" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repudiandae blanditiis quos, nostrum iure dolorum sapiente beatae dicta possimus,
-                             voluptatum aspernatur saepe autem labore quis mollitia earum numquam natus.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repudiandae blanditiis quos, nostrum iure dolorum sapiente beatae dicta possimus,
-                             voluptatum aspernatur saepe autem labore quis mollitia earum numquam natus.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-             </div>
-             <a href="#" class="btn">See more</a>
-        </div>
-    </div>
-
-    <!-- ---------Contact Form-------------------------------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>rusithsashika@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>+94 70 363 4326</p>
-                    <div class="social-icons">
-                        <a href="https://bit.ly/49jzokN"><i class="fa-brands fa-square-whatsapp"></i></a>
-                        <a href="https://bit.ly/3vX5nIX"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://bit.ly/48WdkN4"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href="https://bit.ly/3DiDN9t"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/Rusith Sashika Resume.pdf" download  class="btn btn2">Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <input type="email" name="Email" placeholder="Enter Your E-mail" required>
-                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-
-                    </form>
-                    <span id="msg"></span>
-                </div>
+                <a href="#work3" class="btn" onclick="toggleProjectsVisibility()">Show more</a>
+                <a href="#Food Price Tracker Mobile App" class="btn show-less-btn" onclick="toggleProjectsVisibility()" style="display: none;">Show less</a>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © 2024 Rusith Sashika <sup>®</sup></p>
+
+        <!-- ---------Contact Form-------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>rusithsashika@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+94 70 363 4326</p>
+                        <div class="social-icons">
+                            <a href="https://bit.ly/49jzokN" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="https://bit.ly/3vX5nIX" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://bit.ly/48WdkN4" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://bit.ly/3DiDN9t" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://bit.ly/3wcZmYA" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/Rusith Sashika Resume.pdf" download  class="btn btn2">Download My Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your E-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 Rusith Sashika <sup>®</sup></p>
+            </div>
         </div>
-    </div>
 
-    <script>
-        var tablinks =document.getElementsByClassName("tab-links");
-        var tabcontents =document.getElementsByClassName("tab-contents");
+        <script>
+            var tablinks =document.getElementsByClassName("tab-links");
+            var tabcontents =document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
+            function opentab(tabname) {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
             }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
+        </script>
+
+        <script>
+
+            var side_menu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                side_menu.style.right = 0;
             }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
 
-    <script>
+            function closemenu(){
+                side_menu.style.right = "-200px";
+            }
 
-        var side_menu = document.getElementById("sidemenu");
+        </script>
 
-        function openmenu(){
-            side_menu.style.right = 0;
-        }
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz3Hz2zdcXywQIvhgNwBnhnPbZCQNEhueD_ypnzkOjYX3wnAU373MvPCjS_1FfxU8X6sA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg =document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully."
+                    setTimeout(function(){
+                        msg.innerHTML =""
+                    })
+                },5000)
+                form.reset()
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
 
-        function closemenu(){
-            side_menu.style.right = "-200px";
-        }
 
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7R5Lr_mZ9Yoa_FKYPBShmWP_8qCHEMHCDFAz7acxzhITlRSnnRBSSWsk1SPSpCIbg/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg =document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully."
-                setTimeout(function(){
-                    msg.innerHTML =""
-                })
-            },5000)
-            form.reset()
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-</body>
+        <script>
+            // Function to toggle the visibility of the additional projects and show "See more" button
+            function toggleProjectsVisibility() {
+                var project3 = document.getElementById('work3');
+                var project4 = document.getElementById('work4');
+                var seeMoreButton = document.querySelector('.btn');
+                var showLessButton = document.querySelector('.show-less-btn');
+
+                // Toggle the display property of the last two projects
+                project3.style.display = (project3.style.display === 'none') ? 'block' : 'none';
+                project4.style.display = (project4.style.display === 'none') ? 'block' : 'none';
+
+                // Toggle the display property of the "See more" button
+                seeMoreButton.style.display = (seeMoreButton.style.display === 'none') ? 'block' : 'none';
+
+                // Toggle the display property of the "Show less" button
+                showLessButton.style.display = (showLessButton.style.display === 'none') ? 'block' : 'none';
+            }
+        </script>
+
+        <script>
+            const letters = document.querySelectorAll('.typing-animation');
+            
+            function typeLetters() {
+                letters.forEach((letter, index) => {
+                    setTimeout(() => {
+                        letter.style.opacity = '1';
+                    }, index * 300); 
+                });
+            
+                setTimeout(clearLetters, letters.length * 300); 
+            }
+            
+            function clearLetters() {
+                for (let i = letters.length - 1; i >= 0; i--) {
+                    setTimeout(() => {
+                        letters[i].style.opacity = '0';
+                    }, (letters.length - i) * 300); 
+                }
+            
+                setTimeout(typeLetters, (letters.length + 1) * 300); 
+            } 
+            // Start the loop
+            setTimeout(typeLetters, 10);
+        </script>
+    </body>
 </html>
