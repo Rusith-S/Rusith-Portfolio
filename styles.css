@@ -427,6 +427,7 @@ nav .fa-solid{
         
         padding-top: 20px;
         background-image: url(images/mobile.jpeg);
+        
     }
 
     .header-text{
@@ -460,6 +461,9 @@ nav .fa-solid{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .logo{
+        width: 100px;
     }
     .sub-title{
         font-size: 40px;
