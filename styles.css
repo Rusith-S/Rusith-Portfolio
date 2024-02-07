@@ -150,6 +150,7 @@ nav ul li a:hover::after{
     font-size: 18px;
     font-weight: 400;
     text-align:justify;
+    padding-top:30px;
 }
 
 .sub-title{
@@ -160,11 +161,11 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
 } 
 
 .tab-links{
-    margin-right: 50px;
+    margin-right: 70px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -196,7 +197,7 @@ nav ul li a:hover::after{
     
 }
 .tab-contents ul li span{
-    color: #A159F0;
+    color: #b875ff;
     font-size:  18px;
 }
 
