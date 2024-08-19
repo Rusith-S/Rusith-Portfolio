@@ -16,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpeg);  
+    /* background-image: url(images/background.jpeg);   */
     background-size:cover;;
     background-position: right;
     
@@ -55,7 +55,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height:3px;
-    background: purple;
+    background: #ff6347;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,7 +79,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: purple;
+    color: #ff6347;
     
 }
 .typing-animation {
@@ -121,171 +121,203 @@ nav ul li a:hover::after{
 
 /* --About-- */
 
-#about{
+/* --About-- */
+
+#about {
     padding: 80px 0;
-    color: #ababab ;
+    color: #e0e0e0; /* Light text color for contrast */
+    background-color: #121212; /* Dark background color */
+    font-family: 'Arial', sans-serif; /* Professional font */
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 20px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for a professional look */
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
 }
 
-.about-col-2 p{
+.about-col-2 p {
     font-size: 18px;
     font-weight: 400;
-    text-align:justify;
-    padding-top:30px;
+    text-align: justify;
+    padding-top: 30px;
+    line-height: 1.6; /* Improved line height for readability */
 }
 
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
+.sub-title {
+    font-size: 48px; /* Slightly smaller font size */
+    font-weight: 700; /* Bolder font weight */
+    color: #e0e0e0; /* Light color for better readability */
+    margin-bottom: 20px; /* Space below the title */
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
     margin: 20px 0 30px;
-} 
+}
 
-.tab-links{
-    margin-right: 70px;
+.tab-links {
+    margin-right: 50px; /* Reduced margin for a tighter layout */
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #1e90ff; /* Professional blue color */
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: purple;
+    background: #1e90ff; /* Matching underline color */
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li a{
+.tab-contents ul li a {
     text-decoration: none;
-    color: #fff;
-    
-}
-.tab-contents ul li span{
-    color: #b875ff;
-    font-size:  18px;
+    color: #1e90ff; /* Professional blue color */
+    transition: color 0.3s;
 }
 
-.tab-contents{
+.tab-contents ul li a:hover {
+    color: #4682b4; /* Lighter blue on hover */
+}
+
+.tab-contents ul li span {
+    color: #b0c4de; /* Subtle gray color */
+    font-size: 18px;
+}
+
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
 /* ---------Services------------- */
 
-#services{
+#services {
     padding: 30px 0;
+    background-color: #1a1a1a; /* Dark background for the section */
+    color: #e0e0e0; /* Light text color for contrast */
 }
 
-.services-list{
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.services-list div{
-    background: #262626;
+.services-list div {
+    background: #2e2e2e; /* Slightly lighter dark background */
     padding: 40px;
-    font-size: 13px;
+    font-size: 14px; /* Slightly larger font size for readability */
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
-.services-list div i{
+.services-list div i {
     font-size: 50px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
+    color: #1e90ff; /* Professional blue color for icons */
 }
 
-.services-list div h2{
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: #e0e0e0; /* Light color for headings */
 }
 
-.services-list div p{
-    text-align: center; 
+.services-list div p {
+    text-align: center;
+    color: #b0c4de; /* Subtle gray color for text */
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
-    color: #fff;
-    font-size: 12px;
+    color: #1e90ff; /* Professional blue color for links */
+    font-size: 14px; /* Slightly larger font size for readability */
     margin-top: 20px;
     display: inline-block;
+    transition: color 0.3s, transform 0.3s;
 }
-.services-list div:hover{
-    background: purple;
-    transform: translateY(-10px);
+
+.services-list div a:hover {
+    color: #4682b4; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.services-list div:hover {
+    background: #3a5672; /* Slightly lighter background on hover */
+    transform: translateY(-10px) scale(1.02); /* Slightly enlarge and lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
 /* ---------Projects------------- */
-#portfolio{
+#portfolio {
     padding: 50px 0;
+    background-color: #1a1a1a; /* Dark background for the section */
+    color: #e0e0e0; /* Light text color for contrast */
 }
 
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),purple);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff6347); /* Gradient with a vibrant tomato color */
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -301,14 +333,15 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    color: #fff; /* White color for better readability */
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
-    color: purple;
+    color: #ff6347; /* Matching vibrant tomato color */
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -317,108 +350,152 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.work:hover img{
+.layer a:hover {
+    background: #ff6347; /* Vibrant tomato color on hover */
+    color: #fff; /* White color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
-.btn{
+.work:hover {
+    transform: translateY(-10px); /* Slightly lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid purple;
+    border: 1px solid #ff6347; /* Matching vibrant tomato color */
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    background: transparent;
+    transition: background 0.5s, color 0.5s;
 }
 
-.btn:hover{
-    background: purple;
+.btn:hover {
+    background: #ff6347; /* Vibrant tomato color on hover */
+    color: #fff; /* White color on hover */
 }
 
 /* -------contact-------------------------------- */
 
-.contact-left{
+.contact-left {
     flex-basis: 35%;
+    color: #e0e0e0; /* Light text color for contrast */
 }
 
-.contact-right{
+.contact-right {
     flex-basis: 60%;
+    color: #e0e0e0; /* Light text color for contrast */
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-left p i{
-    color: purple;
+.contact-left p i {
+    color: #ff6347; /* Vibrant tomato color */
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 30px;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
-    font-size: 30PX;
-    margin-right: 15PX;
+    font-size: 30px;
+    margin-right: 15px;
     color: #ababab;
     display: inline-block;
-    transition: transform 0.5s;
+    transition: transform 0.5s, color 0.3s;
 }
 
-.social-icons a:hover{
-    color: purple;
+.social-icons a:hover {
+    color: #ff6347; /* Vibrant tomato color on hover */
     transform: translateY(-5px);
 }
 
-.btn.btn2{
-    display: inline-block ;
-    background: purple;
+.btn.btn2 {
+    display: inline-block;
+    background: #ff6347; /* Vibrant tomato color */
+    color: #fff; /* White text color */
+    padding: 14px 60px;
+    font-size: 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.contact-right form{
+.btn.btn2:hover {
+    background: #ff4500; /* Darker tomato color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-right form {
     width: 100%;
 }
 
-form input, form textarea{
+form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #2e2e2e; /* Slightly lighter dark background */
     padding: 15px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
 }
 
-form .btn2{
+form input:focus, form textarea:focus {
+    background: #3a3a3a; /* Slightly lighter background on focus */
+    color: #ff6347; /* Vibrant tomato color on focus */
+}
+
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    background: #ff6347; /* Vibrant tomato color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.copyright{
+form .btn2:hover {
+    background: #ff4500; /* Darker tomato color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #2e2e2e; /* Slightly lighter dark background */
+    color: #e0e0e0; /* Light text color */
     font-weight: 300;
     margin-top: 20px;
 }
 
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
 
@@ -427,8 +504,8 @@ nav .fa-solid{
     #header{
         
         padding-top: 20px;
-        background-image: url(images/mobile.jpeg);
-        
+        /* background-image: url(images/mobile.jpeg);
+         */
     }
 
     .header-text{
