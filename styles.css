@@ -16,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/background.jpeg);   */
+    background-image: url(images/new\ 1.jpg);  
     background-size:cover;;
     background-position: right;
     
@@ -34,7 +34,7 @@ nav{
 }
 
 .logo{
-    width: 140px;;
+    width: 100px;;
 }
 
 nav ul li{
@@ -73,7 +73,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 55px;
     margin-top: 20px;
     
 }
@@ -118,8 +118,6 @@ nav ul li a:hover::after{
         letter-spacing: 0;
     }
 }
-
-/* --About-- */
 
 /* --About-- */
 
