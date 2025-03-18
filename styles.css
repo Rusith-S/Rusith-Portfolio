@@ -82,12 +82,280 @@ nav ul li a:hover::after{
     color: #ff6347;
     
 }
-/* .typing-animation {
+
+.experience-details .provider {
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaa; /* Slightly dim color to differentiate */
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Adjusted spacing */
+    padding: 10px 15px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddd;
+    line-height: 1.6;
+    flex-grow: 1; /* Allows content to take available space */
+}
+
+.experience-details .certificate-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.experience-details .provider {
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaa;
+}
+
+.experience-details .date {
+    font-size: 14px;
+    font-weight: 500;
+    color: #bbb;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Increased spacing for a balanced layout */
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+}
+
+.company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #ddd;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.experience-details .certificate-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.experience-details .provider {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+
+.experience-details .date {
+    font-size: 13px;
+    font-weight: 500;
+    color: #bbb;
+    margin-bottom: 4px;
+}
+
+.show-certificate-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #008CFF;
+    text-decoration: none;
     display: inline-block;
-    opacity: 0;
-    animation: typing 0.9s steps(10, end) forwards; 
-    letter-spacing: 0;
-} */
+    margin-top: 4px;
+    transition: color 0.3s ease-in-out;
+}
+
+.show-certificate-link:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddd;
+    line-height: 1.6; /* Increased spacing between lines */
+}
+
+.experience-details span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.experience-details .date {
+    font-size: 14px;
+    font-weight: 500;
+    color: #bbb;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Spacing between image and text */
+    padding: 10px 15px;
+}
+
+.education-logo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddd;
+    line-height: 1.6; /* Space between lines */
+}
+
+.education-details span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.education-details .date {
+    font-size: 14px;
+    font-weight: 500;
+    color: #bbb;
+}
+
+/* Certification Section Styling */
+.certification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certification-item {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Well-balanced spacing */
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    transition: background 0.3s ease-in-out;
+}
+
+.certification-item:hover {
+    background: rgba(255, 255, 255, 0.05); /* Light hover effect */
+}
+
+.certification-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.certification-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #ddd;
+    line-height: 1.5;
+    flex-grow: 1; /* Allows content to take available space */
+}
+
+.certification-details .certificate-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.certification-details .certificate-provider {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999; /* Lighter color for provider */
+}
+
+.certification-details .certificate-date {
+    font-size: 13px;
+    font-weight: 500;
+    color: #bbb;
+    margin-bottom: 4px;
+}
+
+/* Stylish Certificate Link */
+.certificate-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #008CFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+    transition: color 0.3s ease-in-out;
+}
+
+.certificate-link:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+#loadMoreBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#loadMoreBtn:hover {
+    background: linear-gradient(135deg, #5a7cfb, #9466e3);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+#loadMoreBtn:active {
+    transform: scale(0.98);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
 
 @keyframes typing {
     from {
